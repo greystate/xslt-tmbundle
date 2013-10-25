@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>key('${3:${1:element}By${2:category}}', ${4:'${5:searchstring}'})</string>
+	<key>name</key>
+	<string>XSLT key() function</string>
+	<key>scope</key>
+	<string>string.quoted.double.xml</string>
+	<key>tabTrigger</key>
+	<string>key</string>
+	<key>uuid</key>
+	<string>21035EE6-105A-423C-8FB0-D6CE594E6861</string>
+</dict>
+</plist>

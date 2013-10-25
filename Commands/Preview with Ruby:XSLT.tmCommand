@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -w
+
+#$LOAD_PATH &lt;&lt; "/usr/local/lib/ruby/site_ruby/1.8:/usr/local/lib/ruby/site_ruby/1.8/powerpc-darwin8.9.0:/usr/local/lib/ruby/site_ruby:/usr/local/lib/ruby/1.8:/usr/local/lib/ruby/1.8/powerpc-darwin8.9.0"
+
+#require 'xml/xslt'
+
+files = "#{ENV['TM_SELECTED_FILES']}".split("' '")
+files.each { |e| e.gsub!("'", "").gsub!(" ", "\\ ") }
+
+# files.delete_if {|f| f[/\.x(ml|sd|slt?)$/].nil? }
+
+if files.length == 2 then
+  files.reverse! if files[1][/\.xslt?$/].nil?
+
+  # print "Executing transform of '" + files[0] + "' with '" + files[1] + "':\n\n"
+
+#  XML::XSLT.registerErrorHandler do |error_str|
+#    # $stderr.puts error_str
+#  end
+  
+#  xslt = XML::XSLT.new()
+#  xslt.xml = files[0]
+#  xslt.xsl = files[1]
+  
+#  out = xslt.serve()
+  system "xsltproc --novalid #{files[1]} #{files[0]}"
+end</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^~@x</string>
+	<key>name</key>
+	<string>Preview transformation</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>uuid</key>
+	<string>DD0285E8-6633-4DB9-9A32-8DACA0657CC5</string>
+</dict>
+</plist>

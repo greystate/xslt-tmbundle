@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:template match="${1:pageTeaser}[string-length() &amp;gt; &amp;${2:maxLength};]"&gt;
+	&lt;span title="{normalize-space(.)}"&gt;
+		&lt;xsl:value-of select="substring(., 1, &amp;$2;)" /&gt;&lt;xsl:text&gt;${3:&amp;#8230;}&lt;/xsl:text&gt;
+	&lt;/span&gt;
+&lt;/xsl:template&gt;
+&lt;!ENTITY $2 "${4:120}"&gt;</string>
+	<key>name</key>
+	<string>XSLT maxLength template</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>tabTrigger</key>
+	<string>maxlen</string>
+	<key>uuid</key>
+	<string>C70B000F-E360-4EE1-8CB4-74EB3938B5C4</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>substring('${1:YES}|${2:NO}', not(${6:\$${3:variable} = ${5:'${4:value}'}}) * ${8:CALC:$7+1} + 1, ${7:LENGTH_OF_OPTION_ONE})</string>
+	<key>name</key>
+	<string>XSLT One-Line Toggle</string>
+	<key>scope</key>
+	<string>text.xml.xsl string.quoted.double.xml</string>
+	<key>tabTrigger</key>
+	<string>?:</string>
+	<key>uuid</key>
+	<string>6842D884-ADCE-4DDB-B708-9F462E6D65A8</string>
+</dict>
+</plist>

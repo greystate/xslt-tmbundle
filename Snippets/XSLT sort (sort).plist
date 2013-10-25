@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:sort select="${1:createDate}" data-type="${2:text}${3:number}" order="${4:a}${5:de}scending" /&gt;</string>
+	<key>name</key>
+	<string>XSLT sort</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>sort</string>
+	<key>uuid</key>
+	<string>E5F4606E-E7CE-4625-AD4A-A57A97FB164E</string>
+</dict>
+</plist>

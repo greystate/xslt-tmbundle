@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- ===========================================================
+Stub for $1() $2
+============================================================ --&gt;
+&lt;func:function name="umb:${1:FunctionName}"&gt;
+	${3:&lt;xsl:param name="${4:argument}" /&gt;}
+&lt;/func:function&gt;</string>
+	<key>name</key>
+	<string>EXSLT Stub function</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>tabTrigger</key>
+	<string>stub</string>
+	<key>uuid</key>
+	<string>694DEF9B-FD9E-4048-BDB1-91A1C281BCAC</string>
+</dict>
+</plist>

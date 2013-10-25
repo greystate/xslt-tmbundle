@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>echo -n "&lt;xsl:text&gt;${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}&lt;/xsl:text&gt;"</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^@W</string>
+	<key>name</key>
+	<string>Wrap Selection/Word in text element</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>uuid</key>
+	<string>D0E348FE-319E-4DE5-BD2D-F3883B781118</string>
+</dict>
+</plist>

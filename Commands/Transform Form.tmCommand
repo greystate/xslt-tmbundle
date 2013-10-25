@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>xsltproc --novalid "$TM_FILEPATH" "/Users/chriz/steinmeier.dk/Klean/Garant/Forms/fixture_form-gulvbus.xml"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Transform Form</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>uuid</key>
+	<string>A1085A07-2110-4FB1-BD86-777A842C9FC5</string>
+</dict>
+</plist>

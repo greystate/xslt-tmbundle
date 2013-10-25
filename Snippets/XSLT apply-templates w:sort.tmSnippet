@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:apply-templates select="${1:node}"&gt;
+	&lt;xsl:sort select="${2:createDate}" data-type="${3:text}${4:number}" order="${5:a}${6:de}scending" /&gt;
+&lt;/xsl:apply-templates&gt;</string>
+	<key>name</key>
+	<string>XSLT apply-templates w/sort</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>appls</string>
+	<key>uuid</key>
+	<string>683DC086-C6AE-4773-81DE-102253AABDC9</string>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#PRESENT_PATH="${TM_FILEPATH/%$TM_FILENAME/}present/"
+
+PRESENT_NAME="${TM_FILENAME/#slides-/}"
+PRESENT_NAME="${PRESENT_NAME/%.xml/.html}"
+
+#echo "$PRESENT_PATH$PRESENT_NAME"
+xsltproc --novalid --xinclude --output "present/$PRESENT_NAME" "transform-slides.xsl" "$TM_FILEPATH"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^@b</string>
+	<key>name</key>
+	<string>Build Slideshow Presentation</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>text.xml - xsl</string>
+	<key>uuid</key>
+	<string>4D3A7266-4346-4109-AC30-743087752216</string>
+</dict>
+</plist>

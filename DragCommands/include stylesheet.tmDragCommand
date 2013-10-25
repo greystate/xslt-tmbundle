@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>echo "&lt;xsl:\${1:include}\${2:import} href=\"${TM_DROPPED_FILE}\" /&gt;"</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>xsl</string>
+		<string>xslt</string>
+	</array>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>include stylesheet</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>uuid</key>
+	<string>FF72D6CE-42B6-40D0-B594-9CEF737D5C44</string>
+</dict>
+</plist>

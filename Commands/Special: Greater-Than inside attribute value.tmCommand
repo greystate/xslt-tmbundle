@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>echo -n \&amp;gt\;\ </string>
+	<key>fallbackInput</key>
+	<string>none</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>&gt;</string>
+	<key>name</key>
+	<string>Special: Greater-Than inside attribute value</string>
+	<key>output</key>
+	<string>afterSelectedText</string>
+	<key>scope</key>
+	<string>string.quoted.double.xml</string>
+	<key>uuid</key>
+	<string>AE087C93-E070-4941-9FD4-67AC113F098C</string>
+</dict>
+</plist>

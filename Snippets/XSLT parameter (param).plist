@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:param name="${1:today}"${3: select="${4:2006}-${5:01}-${6:01}"} /&gt;</string>
+	<key>name</key>
+	<string>XSLT parameter</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>param</string>
+	<key>uuid</key>
+	<string>2224A03B-5781-4FF5-B158-F7E7845E64B9</string>
+</dict>
+</plist>

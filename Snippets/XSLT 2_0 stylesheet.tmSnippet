@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;xsl:stylesheet
+	version="2.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+&gt;
+
+	$0
+
+&lt;/xsl:stylesheet&gt;</string>
+	<key>name</key>
+	<string>XSLT 2.0 stylesheet</string>
+	<key>scope</key>
+	<string></string>
+	<key>tabTrigger</key>
+	<string>xslt2</string>
+	<key>uuid</key>
+	<string>F9F0A1A3-721D-4E11-B12A-7005DA332055</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:template match="${1:date}" mode="${2:group}"&gt;
+	$0
+&lt;/xsl:template&gt;</string>
+	<key>name</key>
+	<string>XSLT moded template</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>tmplm</string>
+	<key>uuid</key>
+	<string>14643971-F1F9-4EBD-AC9F-63677A86902D</string>
+</dict>
+</plist>

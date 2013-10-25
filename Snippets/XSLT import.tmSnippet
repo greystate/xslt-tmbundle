@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:import href="${1:_${2:${3:MediaHelper}.xslt}}" /&gt;</string>
+	<key>name</key>
+	<string>XSLT import</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>import</string>
+	<key>uuid</key>
+	<string>13E47033-FF90-4BB4-8AF0-32477A04B7C3</string>
+</dict>
+</plist>

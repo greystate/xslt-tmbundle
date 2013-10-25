@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>boolean($1)</string>
+	<key>name</key>
+	<string>XPath boolean()</string>
+	<key>scope</key>
+	<string>string.quoted.double.xml</string>
+	<key>tabTrigger</key>
+	<string>bool</string>
+	<key>uuid</key>
+	<string>F9A70DF1-55A0-4F96-B23F-8910D1EB1EAF</string>
+</dict>
+</plist>

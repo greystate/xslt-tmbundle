@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:if test="${1:not(${2:position() = last()})}"&gt;$3&lt;/xsl:if&gt;</string>
+	<key>name</key>
+	<string>XSLT if</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>if</string>
+	<key>uuid</key>
+	<string>2562FD0F-BADE-427D-867A-20AB6365FD41</string>
+</dict>
+</plist>

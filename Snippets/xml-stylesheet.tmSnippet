@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?xml-stylesheet type="text/xml" href="${1:transform-TM_FILENAME}.xslt"?&gt;</string>
+	<key>name</key>
+	<string>xml-stylesheet</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>xml-s</string>
+	<key>uuid</key>
+	<string>45B219E8-BDA2-44C0-B72A-2D15A213AA31</string>
+</dict>
+</plist>

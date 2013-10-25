@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:if test="\$${1:class}"&gt;&lt;xsl:attribute name="$1"&gt;&lt;xsl:value-of select="\$$1" /&gt;&lt;/xsl:attribute&gt;&lt;/xsl:if&gt;</string>
+	<key>name</key>
+	<string>XSLT if parameter, add attribute</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>ifparam</string>
+	<key>uuid</key>
+	<string>F7B5E6B1-BA53-4317-B06F-801EA3E778B4</string>
+</dict>
+</plist>

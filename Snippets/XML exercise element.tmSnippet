@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;exercise&gt;
+	&lt;name&gt;${1:Grouping}&lt;/name&gt;
+	&lt;description&gt;
+		&lt;step&gt;${2:Do something}&lt;/step&gt;${4:
+		&lt;step&gt;${3:Do something else}&lt;/step&gt;
+	}&lt;/description&gt;
+&lt;/exercise&gt;</string>
+	<key>name</key>
+	<string>XML exercise element</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>exercise</string>
+	<key>uuid</key>
+	<string>AD821C7A-09E8-4A0A-A1F7-1CC4CCD82EB5</string>
+</dict>
+</plist>

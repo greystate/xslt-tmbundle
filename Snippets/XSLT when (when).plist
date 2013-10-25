@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:when test="$1"&gt;
+	$2
+&lt;/xsl:when&gt;</string>
+	<key>name</key>
+	<string>XSLT when</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>when</string>
+	<key>uuid</key>
+	<string>1A63C854-8002-4AB4-B4BC-C56DEE473823</string>
+</dict>
+</plist>

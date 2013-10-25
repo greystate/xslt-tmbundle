@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:exslt:}node-set(\$${2:days})</string>
+	<key>name</key>
+	<string>XPath node-set()</string>
+	<key>scope</key>
+	<string>string.quoted.double.xml</string>
+	<key>tabTrigger</key>
+	<string>nodeset</string>
+	<key>uuid</key>
+	<string>25986406-2C57-411A-9AD6-DD9FEA9622CE</string>
+</dict>
+</plist>

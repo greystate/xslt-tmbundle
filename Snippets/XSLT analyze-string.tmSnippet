@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:analyze-string select="${1:.}" regex="${2:\\WLOST\\W}"${4: flags="${3:i}"}&gt;
+	&lt;xsl:${5:non-}matching-substring&gt;
+		$0
+	&lt;/xsl:$5matching-substring&gt;
+&lt;/xsl:analyze-string&gt;</string>
+	<key>name</key>
+	<string>XSLT 2.0 analyze-string</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>tabTrigger</key>
+	<string>analyze</string>
+	<key>uuid</key>
+	<string>EE710A50-81BB-4F9F-B782-E8EF139F9C89</string>
+</dict>
+</plist>

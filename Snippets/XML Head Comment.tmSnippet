@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- 
+      $TM_FILENAME
+      ${1:Kind} for ${2:client/website}
+      
+      Created by ${3:Heyday} on `date +"%Y-%m-%d"`.
+--&gt;$0</string>
+	<key>name</key>
+	<string>XML Head Comment</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>heyday</string>
+	<key>uuid</key>
+	<string>880D37B9-7F23-43EC-BBDB-B142FAE82789</string>
+</dict>
+</plist>

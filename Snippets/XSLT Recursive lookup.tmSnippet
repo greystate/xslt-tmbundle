@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>ancestor-or-self::*[normalize-space(${1:name})][1]/$1</string>
+	<key>name</key>
+	<string>XSLT Recursive lookup</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>tabTrigger</key>
+	<string>recurse</string>
+	<key>uuid</key>
+	<string>7214D178-C3A1-47D2-8BDA-1B31873413DA</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>xsltproc -o ${1:${2:outputfile}.html} ${4:${5:stylesheet}.xslt} ${6:${7:xmlfile}.xml}</string>
+	<key>name</key>
+	<string>xsltproc</string>
+	<key>tabTrigger</key>
+	<string>xsltproc</string>
+	<key>uuid</key>
+	<string>D7D0A053-963A-4D66-AC1C-26B022A5F5BB</string>
+</dict>
+</plist>

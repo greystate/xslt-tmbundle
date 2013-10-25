@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;textarea rows="8" cols="40"&gt;&lt;xsl:copy-of select="${1:.}" /&gt;&lt;/textarea&gt;</string>
+	<key>name</key>
+	<string>XSLT Debug textarea</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>debug</string>
+	<key>uuid</key>
+	<string>3E039D67-8D1A-4965-9190-E6C7EBD98430</string>
+</dict>
+</plist>

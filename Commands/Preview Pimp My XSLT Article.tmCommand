@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>
+PIMP_ROOT="/Users/chriz/Development/pimpmyxslt_com/dev/articles"
+
+echo '&lt;?xml version="1.0" encoding="utf-8"?&gt;' &gt; "$PIMP_ROOT/_temp-article.xml"
+echo '&lt;article xmlns="http://xmlns.greystate.dk/2010/article"&gt;' &gt;&gt; "$PIMP_ROOT/_temp-article.xml"
+echo '&lt;title&gt;[Article Preview]&lt;/title&gt;' &gt;&gt; "$PIMP_ROOT/_temp-article.xml"
+echo '&lt;body xmlns="http://www.w3.org/1999/xhtml"&gt;' &gt;&gt; "$PIMP_ROOT/_temp-article.xml"
+
+Markdown.pl "$TM_FILEPATH" &gt;&gt; "$PIMP_ROOT/_temp-article.xml"
+
+echo '&lt;/body&gt;' &gt;&gt; "$PIMP_ROOT/_temp-article.xml"
+echo '&lt;/article&gt;' &gt;&gt; "$PIMP_ROOT/_temp-article.xml"
+
+xsltproc --novalid "$PIMP_ROOT/transform_article.xslt" "$PIMP_ROOT/_temp-article.xml"
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>^~@P</string>
+	<key>name</key>
+	<string>Preview Pimp My XSLT Article</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>uuid</key>
+	<string>A236A78D-BF1B-4097-93E1-A97AF41FAF8C</string>
+</dict>
+</plist>

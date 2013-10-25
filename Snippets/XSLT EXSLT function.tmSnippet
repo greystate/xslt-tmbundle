@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;func:function name="${2:get}:${1:name}"&gt;
+	&lt;xsl:param name="${3:nodes}"${4: select="${5:default}"} /&gt;
+	
+	&lt;func:result${6: select="${7:output}" /}&gt;$0
+&lt;/func:function&gt;</string>
+	<key>name</key>
+	<string>XSLT EXSLT function</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>tabTrigger</key>
+	<string>func</string>
+	<key>uuid</key>
+	<string>7DB8E6DF-3982-4CD0-B9BC-82AD29C3DFA7</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- Identity transform --&gt;
+&lt;xsl:template match="* | text()"&gt;
+	&lt;xsl:copy&gt;
+		&lt;xsl:copy-of select="@*" /&gt;
+		&lt;xsl:apply-templates select="* | text()" /&gt;
+	&lt;/xsl:copy&gt;
+&lt;/xsl:template&gt;</string>
+	<key>name</key>
+	<string>XSLT Identity transform</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>identity</string>
+	<key>uuid</key>
+	<string>CEF709CA-4A88-4ECC-B58E-A4146ED0F7E8</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;test:test&gt;
+	&lt;test:title&gt;${1:Navigation} test&lt;/test:title&gt;
+	&lt;test:context${2: href="" select=""}&gt;
+		$3
+	&lt;/test:context&gt;
+	&lt;test:expect&gt;
+		$4
+	&lt;/test:expect&gt;
+&lt;/test:test&gt;$0</string>
+	<key>name</key>
+	<string>XSLT Test Case</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>test</string>
+	<key>uuid</key>
+	<string>3DCD56C6-E36A-41D6-83C4-DF64DE7ED0EA</string>
+</dict>
+</plist>

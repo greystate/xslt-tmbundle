@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:template match="* | /"&gt;
+	&lt;xsl:apply-templates /&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="* | /" mode="m"&gt;
+	&lt;xsl:apply-templates mode="m" /&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="text() | @*"&gt;
+	&lt;xsl:value-of select="." /&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="processing-instruction() | comment()" /&gt;</string>
+	<key>name</key>
+	<string>XSLT Built-in templates</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>tabTrigger</key>
+	<string>builtin</string>
+	<key>uuid</key>
+	<string>3DFB0684-9458-4853-93DF-FE0EB0D6FDC0</string>
+</dict>
+</plist>

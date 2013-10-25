@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -w
+
+#$LOAD_PATH &lt;&lt; "/usr/local/lib/ruby/site_ruby/1.8:/usr/local/lib/ruby/site_ruby/1.8/powerpc-darwin8.9.0:/usr/local/lib/ruby/site_ruby:/usr/local/lib/ruby/1.8:/usr/local/lib/ruby/1.8/powerpc-darwin8.9.0"
+
+xmlfile = "#{ENV['TM_FILEPATH']}"
+xsltfile = "#{ENV['TM_BUNDLE_SUPPORT']}/lib/logviewer.xslt"
+
+out = system %Q(java net.sf.saxon.Transform -xsl:"#{xsltfile}" -s:"#{xmlfile}")
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^~@p</string>
+	<key>name</key>
+	<string>View XML Project Log</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>uuid</key>
+	<string>529FBB5A-36EE-4147-9671-486C99053120</string>
+</dict>
+</plist>

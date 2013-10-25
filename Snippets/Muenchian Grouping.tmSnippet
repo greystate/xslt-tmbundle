@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- TODO: Move this above first template in stylesheet --&gt;
+&lt;xsl:key name="${3:$1-by-$2}" match="${1:contact}" use="${2:lastname}" /&gt;
+
+
+
+&lt;xsl:template match="${4:records}"&gt;
+	&lt;xsl:for-each select="$1[count(. | key('$3', $2)[1]) = 1]"&gt;
+		&lt;xsl:sort select="$2" /&gt;
+		&lt;xsl:apply-templates select="." mode="group" /&gt;
+		
+		&lt;xsl:apply-templates select="key('$3', $2)" mode="item"&gt;
+			&lt;xsl:sort select="${5:firstname}" /&gt;
+		&lt;/xsl:apply-templates&gt;
+	&lt;/xsl:for-each&gt;
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="$1" mode="group"&gt;
+	${6:&lt;!-- TODO: Output for header --&gt;
+	&lt;xsl:value-of select="$2" /&gt;: &lt;xsl:text /&gt;}
+&lt;/xsl:template&gt;
+
+&lt;xsl:template match="$1" mode="item"&gt;
+	${7:&lt;!-- TODO: Output for each item --&gt;
+	&lt;xsl:value-of select="$5" /&gt;, &lt;xsl:text /&gt;}
+&lt;/xsl:template&gt;</string>
+	<key>name</key>
+	<string>Muenchian Grouping</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>tabTrigger</key>
+	<string>group</string>
+	<key>uuid</key>
+	<string>C38AAA23-28A7-4B2A-B838-D16A70427A14</string>
+</dict>
+</plist>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:variable name="${1:${2:data}Proxy}"&gt;
+	&lt;${3:val} id="${4:0}"&gt;$0&lt;/$3&gt;
+&lt;/xsl:variable&gt;
+${5:&lt;xsl:variable name="$2" select="make:node-set(\$$1)" /&gt;}</string>
+	<key>name</key>
+	<string>XSLT variable proxy</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>varm</string>
+	<key>uuid</key>
+	<string>ECB1BAEF-2706-4BB8-8ADC-7FC7FFCBAF1D</string>
+</dict>
+</plist>

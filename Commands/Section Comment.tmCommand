@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>echo -n "&lt;!-- :: \${1:${TM_SELECTED_TEXT:-$TM_CURRENT_LINE}} :: --&gt;"</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@(</string>
+	<key>name</key>
+	<string>Section Comment</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.xml, text.html</string>
+	<key>uuid</key>
+	<string>A5E9C62C-3B53-414B-8978-B8F42901A3B3</string>
+</dict>
+</plist>

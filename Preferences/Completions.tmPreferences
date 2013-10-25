@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Completions</string>
+	<key>scope</key>
+	<string>text.xml.xsl string.quoted</string>
+	<key>settings</key>
+	<dict>
+		<key>completions</key>
+		<array>
+			<string>ancestor::</string>
+			<string>ancestor-or-self::</string>
+			<string>descendant::</string>
+			<string>descendant-or-self::</string>
+			<string>parent::</string>
+			<string>child::</string>
+			<string>attribute::</string>
+			<string>self::</string>
+			<string>exclude-result-prefixes</string>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>6A7496C3-8B52-4001-89E9-8D8E5D5C7514</string>
+</dict>
+</plist>

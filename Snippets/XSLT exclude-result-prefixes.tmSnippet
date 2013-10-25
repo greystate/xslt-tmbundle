@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>exclude-result-prefixes="${1:test}"</string>
+	<key>name</key>
+	<string>XSLT exclude-result-prefixes</string>
+	<key>scope</key>
+	<string>text.xml.xsl meta.tag.xml</string>
+	<key>tabTrigger</key>
+	<string>exclude</string>
+	<key>uuid</key>
+	<string>4A10CCEB-1B45-42C2-9437-562CA18A5B36</string>
+</dict>
+</plist>

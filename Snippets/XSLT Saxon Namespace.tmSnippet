@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>xmlns:${1:saxon}="http://saxon.sf.net/"</string>
+	<key>name</key>
+	<string>XSLT Saxon Namespace</string>
+	<key>scope</key>
+	<string>text.xml, text.html</string>
+	<key>tabTrigger</key>
+	<string>ns</string>
+	<key>uuid</key>
+	<string>B11BCE6B-3082-4E4B-B73B-B66AB79ECCC5</string>
+</dict>
+</plist>

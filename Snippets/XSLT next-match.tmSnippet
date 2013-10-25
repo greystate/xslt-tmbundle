@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:next-match /&gt;</string>
+	<key>name</key>
+	<string>XSLT 2.0 next-match</string>
+	<key>scope</key>
+	<string>text.xml.xsl</string>
+	<key>tabTrigger</key>
+	<string>next</string>
+	<key>uuid</key>
+	<string>4E3060A0-0CD9-49E0-A4DE-98AE0D4EE2A1</string>
+</dict>
+</plist>

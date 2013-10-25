@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;xsl:for-each-group select="${1:movie}" group-by="${2:@year}"&gt;
+	${3:&lt;xsl:sort select="current-grouping-key()" /&gt;}
+	$0
+&lt;/xsl:for-each-group&gt;
+</string>
+	<key>name</key>
+	<string>XSLT for-each-group w/sort</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>forg</string>
+	<key>uuid</key>
+	<string>061AAF00-9BD6-40E6-8BFE-4F0F03F842AE</string>
+</dict>
+</plist>

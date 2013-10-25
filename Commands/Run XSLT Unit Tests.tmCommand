@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>TEMP_FILE1=`mktemp /tmp/TextMate_xslt1.XXXXXX`
+TEMP_FILE2=`mktemp /tmp/TextMate_xslt2.XXXXXX`
+TEMP_FILE3=`mktemp /tmp/TextMate_xslt3.XXXXXX`
+UNITTEST_DIR=/Users/chriz/Development/Misc/XSLT/unittest
+if [[ -n $TEMP_FILE1 ]]; then
+	java net.sf.saxon.Transform -xsl:"$UNITTEST_DIR/generate-tests.xsl" -s:"$TM_FILEPATH" -o:"$TEMP_FILE1"
+	java net.sf.saxon.Transform -xsl:"$TEMP_FILE1" -s:"$TEMP_FILE1" -o:"$TEMP_FILE2"
+	java net.sf.saxon.Transform -xsl:"$UNITTEST_DIR/format-report.xsl" -s:"$TEMP_FILE2" -o:"$TEMP_FILE3"
+# rm "$TEMP_FILE1"
+# rm "$TEMP_FILE2"
+else
+	echo "Error: Temporary file(s) could not be created"
+fi
+cat "$TEMP_FILE3"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Run XSLT Unit Tests</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>uuid</key>
+	<string>FF3C8A1D-C065-4CB9-91EE-A09B78F9C0B9</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>xmlns${2::${1:obj}}="http://xmlns.greystate.dk/2002/object-descriptor"</string>
+	<key>name</key>
+	<string>Greystate Object Descriptor XML Namespace</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>ns</string>
+	<key>uuid</key>
+	<string>79E2A169-C7A9-4C0B-8E96-B2BB8D4C1DF6</string>
+</dict>
+</plist>

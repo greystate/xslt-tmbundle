@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>echo -n \&amp;amp\;</string>
+	<key>fallbackInput</key>
+	<string>none</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@6</string>
+	<key>name</key>
+	<string>Insert escaped ampersand</string>
+	<key>output</key>
+	<string>afterSelectedText</string>
+	<key>uuid</key>
+	<string>3EEE583F-9671-4152-AA41-6FA5A6A6A422</string>
+</dict>
+</plist>

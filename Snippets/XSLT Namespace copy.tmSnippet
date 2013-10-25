@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>xmlns${2::${1:PREFIX}}="http://xmlns.greystate.dk/${3:YYYY}/${4:NAME}"</string>
+	<key>name</key>
+	<string>Greystate XML Namespace</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>ns</string>
+	<key>uuid</key>
+	<string>8C7D8F1C-A867-4A1A-B421-CA34629E87EA</string>
+</dict>
+</plist>

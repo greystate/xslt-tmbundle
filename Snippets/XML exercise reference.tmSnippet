@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;exercise name="${1:Grouping}" /&gt;</string>
+	<key>name</key>
+	<string>XML exercise reference</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>exercise</string>
+	<key>uuid</key>
+	<string>34B6A87A-7438-41A8-9E13-132C4041F072</string>
+</dict>
+</plist>

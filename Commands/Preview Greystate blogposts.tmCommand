@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -w
+
+$LOAD_PATH &lt;&lt; "/usr/local/lib/ruby/site_ruby/1.8:/usr/local/lib/ruby/site_ruby/1.8/powerpc-darwin8.9.0:/usr/local/lib/ruby/site_ruby:/usr/local/lib/ruby/1.8:/usr/local/lib/ruby/1.8/powerpc-darwin8.9.0"
+
+require 'xml/xslt'
+require 'parsedate'
+
+class XML::XSLT
+  def xmldate2rfc822(xmldate)
+    res = ParseDate.parsedate(xmldate)
+    date = Time.local(*res)
+    date.strftime("%a, %d %b %Y %T %z")
+  end
+  
+  def now2rfc822()
+    now = Time.now
+    now.strftime("%a, %d %b %Y %T %z")
+  end
+
+  def thisYear()
+    Time.now.strftime("%Y")
+  end
+end
+
+directory = ENV["TM_PROJECT_DIRECTORY"]
+stylesheet = ENV["TM_FILENAME"]
+
+data = case stylesheet
+  when "transform-navigation.xsl" : "/xml/navigation.xml"
+  when "transform-posts.xsl", "make-rss.xsl" : "/xml/logs/archive.xml"
+end
+
+
+xslt = XML::XSLT.new()
+xslt.xml = "#{directory}#{data}"
+xslt.xsl = "#{directory}/xml/#{stylesheet}"
+
+XML::XSLT.extFunction("xmldate2rfc822", "urn:custom-funcs", xslt)
+XML::XSLT.extFunction("now2rfc822", "urn:custom-funcs", xslt)
+XML::XSLT.extFunction("thisYear", "urn:custom-funcs", xslt)
+
+result = xslt.serve()
+
+unless stylesheet == "make-rss.xsl"
+  print '&lt;html&gt;&lt;head&gt;'
+  print '&lt;link rel="stylesheet" href="file:///Users/chriz/Development/greystate_dk/dev/greystate2008.css" type="text/css" /&gt;'
+  print '&lt;/head&gt;&lt;body class="blog"&gt;'
+  print result
+  print '&lt;/body&gt;&lt;/html&gt;'
+else
+  print result
+end	</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^~@p</string>
+	<key>name</key>
+	<string>Preview Greystate XSLT</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>uuid</key>
+	<string>2B4D4936-95A0-4498-BBCC-1AF3FD12D97B</string>
+</dict>
+</plist>

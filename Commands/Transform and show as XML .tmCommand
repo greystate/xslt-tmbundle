@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -w
+
+files = "#{ENV['TM_SELECTED_FILES']}".split("' '")
+files.each { |e| e.gsub!("'", "").gsub!(" ", "\\ ") }
+
+# files.delete_if {|f| f[/\.(x(ml|sd|slt?))|$/].nil? }
+
+if files.length == 2 then
+  files.reverse! if files[1][/\.xslt?$/].nil?
+
+  system "xsltproc --novalid --output __result.xml #{files[1]} #{files[0]}"
+  out = system %Q{xsltproc --novalid "#{ENV['TM_BUNDLE_SUPPORT']}/lib/defaultss2.xslt" "__result.xml"}
+end</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^~@x</string>
+	<key>name</key>
+	<string>Transform and show as XML </string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>uuid</key>
+	<string>75C79C86-2F23-4FBE-A108-4385015A3FDF</string>
+</dict>
+</plist>

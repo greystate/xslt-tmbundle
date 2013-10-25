@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>xmlns${2::${1:upd}}="http://xmlns.greystate.dk/2003/updates"</string>
+	<key>name</key>
+	<string>Greystate Updates XML Namespace</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>ns</string>
+	<key>uuid</key>
+	<string>2B54E4DF-6D5E-4581-A736-E7CA8F93EC95</string>
+</dict>
+</plist>

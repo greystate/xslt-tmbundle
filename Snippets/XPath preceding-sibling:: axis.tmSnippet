@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>preceding${1:-sibling}::$0</string>
+	<key>name</key>
+	<string>XPath preceding-sibling:: axis</string>
+	<key>scope</key>
+	<string>string.quoted.double.xml</string>
+	<key>tabTrigger</key>
+	<string>pre</string>
+	<key>uuid</key>
+	<string>25BB2AE4-E964-4AB9-91A6-8E8152C442AC</string>
+</dict>
+</plist>

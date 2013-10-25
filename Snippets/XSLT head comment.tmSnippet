@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!--
+	$TM_FILENAME
+	
+	${1:Renders the foo for the bar using the phnöe}
+--&gt;</string>
+	<key>name</key>
+	<string>XSLT head comment</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>head</string>
+	<key>uuid</key>
+	<string>7AE9BF91-F503-4DDD-B18D-12EE4177077F</string>
+</dict>
+</plist>
