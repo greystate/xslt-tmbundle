@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;xsl:output method="${1:xml}" indent="${2:yes}" ${3:omit-xml-declaration="${4:yes}"}${5:
+	<string>&lt;xsl:output method="${1|xml,html,text|}" indent="${2|yes,no|}" ${3:omit-xml-declaration="${4|yes,no|}"}${5:
 	${6:doctype-public="${7:-//W3C//DTD XHTML 1.0 Strict//EN}"
 	}${8:doctype-system="${9:http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd}"
 	}${10:cdata-section-elements="${11:script}"}
