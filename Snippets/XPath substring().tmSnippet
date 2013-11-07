@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>substring${1:-before}(${2:.}, ${4:'${3:string}'})</string>
+	<string>substring${1|-before,-after,|}(${2:.}, ${4:'${3:string}'})</string>
 	<key>name</key>
 	<string>XPath substring()</string>
 	<key>scope</key>
