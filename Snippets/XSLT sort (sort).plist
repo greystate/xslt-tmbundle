@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;xsl:sort select="${1:createDate}" data-type="${2:text}${3:number}" order="${4:a}${5:de}scending" /&gt;</string>
+	<string>&lt;xsl:sort select="${1:@createDate}" data-type="${2|text,number|}" order="${3|ascending,descending|}" /&gt;</string>
 	<key>name</key>
 	<string>XSLT sort</string>
 	<key>scope</key>
