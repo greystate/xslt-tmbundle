@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>disable-output-escaping="yes"</string>
+	<string>disable-output-escaping="${1|yes,no|}"</string>
 	<key>name</key>
 	<string>XSLT @disable-output-escaping</string>
 	<key>scope</key>
